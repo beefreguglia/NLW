@@ -122,18 +122,12 @@ preenchimentos, bordas, cor, fundo, display.
     width: 100%;
     max-width: 360px;
     height: 72px;
-
     border-radius: 8px;
-
     display: flex;
     align-items: center;
-    
     margin-top: 40px;
-
     background-color: var(--primary-collor);
-
     transition: 400ms;
-
     font-weight: bold;
 
 
@@ -150,12 +144,9 @@ preenchimentos, bordas, cor, fundo, display.
 
     width: 72px;
     height: 72px;
-
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
-
     background-color: rgba(0, 0, 0, 0.08);
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +157,6 @@ preenchimentos, bordas, cor, fundo, display.
 
     content: "";
     background-image: url(../assets/search.svg);
-
     width: 20px;
     height: 20px;   
 
@@ -199,7 +189,6 @@ preenchimentos, bordas, cor, fundo, display.
 
         position: absolute;
         bottom: 48px;
-
         left: 50%;
         transform: translateX(-50%);
 
@@ -209,7 +198,6 @@ preenchimentos, bordas, cor, fundo, display.
 
         align-items: center;
         
-
     }
 
 }
