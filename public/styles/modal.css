@@ -91,4 +91,26 @@
 
 }
 
-#
+/*Modal point created*/
+#modal.point .content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+#modal.point h1{
+
+    color: white;
+    margin-top: 32px;
+
+}
+
+#modal.point img{
+
+    height: 200px;
+    width: 200px;
+
+}

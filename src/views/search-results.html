@@ -20,48 +20,94 @@
 
     <main>
 
-        <h4>
+        {% if total > 0 %}
 
-            <strong>2 pontos</strong>
-            encontrados
+            {% if total == 1 %}
 
-        </h4>
+            <h4>
 
-        <div class="cards">
+                <strong>{{total}}
+                    ponto</strong>
+                encontrado
 
-            <div class="card">
+            </h4>
 
-                <img src="https://images.unsplash.com/photo-1481761289552-381112059e05?ixlib=rb-1.2.1&auto=format&fit=crop&w=861&q=80" alt="Colectoria">
-                <h1>Colectoria</h1>
-                <h3>Resíduos Eletrônicos, Lâmpadas</h3>
-                <p>
+            <div class="cards">
 
-                    Rio do Sul, Santa Catarina
-                    <br/>
-                    Guilherme Gemballa, Jardmin América<br/>
-                    Número 260
+                {% for place in places %}
 
-                </p>
+                    <div class="card">
 
-            </div>
+                        <img src="{{ place.image }}" alt="{{ place.name }}">
+                        <h1>{{ place.name }}</h1>
+                        <h3>{{ place.items }}</h3>
+                        <p>
 
-            <div class="card">
+                            {{ place.city }},
+                            {{ place.state }}
+                            <br/>
+                            {{ place.address }}
+                            <br/>
+                            {{ place.address2 }}
 
-                <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=801&q=80" alt="Colectoria">
-                <h1>Colectoria</h1>
-                <h3>Resíduos Eletrônicos, Lâmpadas</h3>
-                <p>
+                        </p>
 
-                    Rio do Sul, Santa Catarina
-                    <br/>
-                    Guilherme Gemballa, Jardmin América<br/>
-                    Número 260
+                    </div>
 
-                </p>
+                {% endfor %}
 
             </div>
 
-        </div>
+            {% else %}
+
+                        <h4>
+
+                <strong>{{total}}
+                    pontos</strong>
+                encontrados
+
+            </h4>
+
+            <div class="cards">
+
+                {% for place in places %}
+
+                    <div class="card">
+
+                        <img src="{{ place.image }}" alt="{{ place.name }}">
+                        <h1>{{ place.name }}</h1>
+                        <h3>{{ place.items }}</h3>
+                        <p>
+
+                            {{ place.city }},
+                            {{ place.state }}
+                            <br/>
+                            {{ place.address }}
+                            <br/>
+                            {{ place.address2 }}
+
+                        </p>
+
+                    </div>
+
+                {% endfor %}
+
+            </div>
+            
+        
+        {% endif %}
+
+
+        {% else %}
+
+            <h4>
+
+                <strong>Nenhum ponto</strong>
+                encontrado
+
+            </h4>
+
+        {% endif %}
 
     </main>
 
