@@ -36,10 +36,10 @@ O projeto está sendo desenvolvido utilizando as seguintes tecnologias:
 ```bash
 
    # Clonar o repositório
-   $ git clone https://github.com/arturmalpeli/uaibooks
+   $ git clone https://github.com/beefreguglia/NLW
    
    # Entrar no diretório
-   $ cd uaibooks
+   $ cd NLW
 
    # Instalar as dependências
    $ yarn install
